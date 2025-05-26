@@ -5,7 +5,7 @@ public class Algoritmos {
     public static void calcularTroco(double valorCompra, double valorPago) {
         double troco = valorPago - valorCompra;
         if (troco < 0) {
-            System.out.println("Valor pago é insuficiente.");
+            System.out.println("Valor pago não é suficiente");
             return;
         }
 
@@ -65,7 +65,7 @@ public class Algoritmos {
             }
         }
 
-        System.out.println("Valor total na mochila: " + valorTotal);
+        System.out.println("O valor total na mochila é: " + valorTotal);
     }
 
     public static void quickSort(int[] array, int inicio, int fim) {
@@ -99,6 +99,6 @@ public class Algoritmos {
 
     public static void ordenarArray(int[] numeros) {
         quickSort(numeros, 0, numeros.length - 1);
-        System.out.println("Array ordenado: " + Arrays.toString(numeros));
+        System.out.println("O Array ordenado é: " + Arrays.toString(numeros));
     }
 }
